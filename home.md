@@ -41,9 +41,9 @@ dateCreated: 2020-12-13T09:24:06.165Z
 - [: Jamf Pro 新消息]()
 - [: Jamf Pro 優勢說明](/jamf-pro/jamf-pro-advantages)
 - [: Jamf Pro 的安裝條件]()
+- [: Jamf Pro 測試計畫](/jamf-pro/jamf-pro-test-plan)
 - [: Jamf Pro 常見安裝問題]()
 - [: Jamf Pro 收費計算方式]()
-- [: Jamf Pro 測試計畫]()
 - [: Jamf Pro 客戶實作案例]()
 {.links-list}
 
@@ -68,5 +68,5 @@ dateCreated: 2020-12-13T09:24:06.165Z
 
 ## User Choice
 Jamf 跟 Apple 推出了 User Choice 方案，只要企業在提供設備時，讓員工自己選用 Windows 電腦或 Mac 電腦，就能符合此方案。
-- [: User Choice 方案說明]()
+- [: User Choice 方案說明](/user-choice/user-choice)
 {.links-list}

@@ -2,7 +2,7 @@
 title: Jamf Pro 目錄
 description: 
 published: true
-date: 2021-01-19T05:44:49.170Z
+date: 2021-01-19T05:45:15.848Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-19T05:33:51.857Z
@@ -16,7 +16,7 @@ dateCreated: 2021-01-19T05:33:51.857Z
 {.links-list}
 
 ## Jamf Pro 安裝方式
-- [: Jamf Pro 的安裝條件](/jamf-pro/jamf-pro-installation/jamf-pro-installation.md)
+- [: Jamf Pro 的安裝條件](/jamf-pro/jamf-pro-installation/jamf-pro-installation)
 - [: Jamf Pro 常見安裝問題]()
 {.links-list}
 

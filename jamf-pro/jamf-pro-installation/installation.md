@@ -28,14 +28,10 @@ Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
 
 ### 雲端環境常見問答
 1. Jamf Cloud 的備援機制為何？
-Jamf 雲端版提供異地備援機制，資料庫會備份至其它區域，如	United States (East, West, Government)
-Germany
-London
-Japan
-Australia。Jamf 雲端版會固定執行資料庫備份，最高保存 30 天的資料庫，每隔 24 小時進行。
+Jamf 雲端版提供異地備援機制，資料庫會備份至其它區域，如美國東部、西部、美國政府雲、德國、倫敦、日本、澳洲。Jamf 雲端版會固定執行資料庫備份，最高保存 30 天的資料庫，每隔 24 小時進行。
 
 2. Jamf Cloud 的服務水準如何？
-Jamf 雲端版提供：
+
 - 99.9% uptime
 - 24/7 availability
 

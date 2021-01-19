@@ -2,10 +2,10 @@
 title: Jamf Pro 目錄
 description: 
 published: true
-date: 2020-12-29T10:59:16.261Z
+date: 2021-01-19T05:45:15.848Z
 tags: 
-editor: undefined
-dateCreated: 2020-12-14T09:56:13.135Z
+editor: markdown
+dateCreated: 2021-01-19T05:33:51.857Z
 ---
 
 ## Jamf Pro 產品介紹

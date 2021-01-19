@@ -26,6 +26,69 @@ Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
 4. 使用 Jamf 雲端版可以少開很多公司的防火牆，降低企業風險
 5. Jamf 雲端版通過 SOC2 與 ISO27001 的資安認證
 
+### 雲端環境常見問答
+1. Jamf Cloud 的備援機制為何？
+Jamf 雲端版提供異地備援機制，資料庫會備份至其它區域，如	United States (East, West, Government)
+Germany
+London
+Japan
+Australia。Jamf 雲端版會固定執行資料庫備份，最高保存 30 天的資料庫，每隔 24 小時進行。
+
+2. Jamf Cloud 的服務水準如何？
+Jamf 雲端版提供：
+- 99.9% uptime
+- 24/7 availability
+
+3. Jamf Cloud 故障時，復原時間為何？
+
+Jamf Pro 伺服器停止服務時，並不會影響已受管理之裝置。已受管理之裝置的設定與已部署的 App 都不會脫管或消失。
+
+Jamf 承諾於最快時間內修復服務，且在服務復原後，可向 Jamf 申請 Service Credit。Jamf 不會在影響期間提供替代方案。
+
+4. Jamf Cloud 如何提供查核措施？
+
+Jamf 雲端版提供有 Change Management Log 供參考，上面將載明人員曾對公司設備做過哪些管理行為。
+
+若需匯出該日誌至貴公司 S3 空間，將需要加值版本的 Jamf Cloud。（20000 美金/年）
+
+5. Jamf Cloud 如何匯出資料？
+
+Jamf 雲端版提供 API 等方式匯出設備報表等資料，型式為 XML 與 JSON，符合資訊處理互通性。但不支援匯出資料庫轉回至地端。
+
+6. Jamf Cloud 的雲端基礎設施為何？
+
+Jamf 雲端版使用 Amazon Web Service 做為服務供應平台，為業界最大的 IaaS 服務。
+
+Jamf 與 AWS 擁有共同責任架構，確保物理性伺服器設施由 AWS 維運管理。
+
+7. Jamf Cloud 的連線安全性為何？
+
+Jamf 雲端版提供 TLS 憑證，全程使用 HTTPS 連線。該 TLS 簽證會由 Amazon 簽發，為蘋果設備預設信任的根憑證。
+
+Jamf 雲端版已完成以下資安證書取得：
+
+- SOC 2 compliance
+- ISO 27001 certification
+
+8. Jamf Cloud 會進行弱點掃描嗎？
+
+Jamf 雲端版於更新版本前，皆會進行相對應資安測試。貴公司可依主動向 Jamf 請求測試報告。
+
+9. Jamf Cloud 如何保護登入人員的安全性？
+
+Jamf 雲端版提供密碼原則功能，可設定密碼複雜度。
+
+Jamf 雲端版已滿足傳輸層安全性。
+
+若需雙因子驗證， 可整合微軟 Azure AD 達成此需求。
+
+若需取得登入記錄，需訂閱雲端加值服務，可將登入紀錄匯出至貴公司 S3 空間。（20000 美金/年）
+
+若需使用 IP 地址過濾，需訂閱雲端加值服務。（20000美金/年）
+
+以上問答請見下列資料來源：
+- https://www.jamf.com/security/
+- https://resources.jamf.com/documents/products/documentation/Jamf-Pro-Security-Overview.pdf
 
 ## 地端安裝環境
 如果客戶不使用雲端版本，Jamf Pro 亦可以安裝於地端環境，但有以下責任：

@@ -16,7 +16,7 @@ dateCreated: 2020-12-14T09:56:13.135Z
 {.links-list}
 
 ## Jamf Pro 安裝方式
-- [: Jamf Pro 的安裝條件](/jamf-pro/jamf-pro-installation/jamf-pro-installation)
+- [: Jamf Pro 的安裝條件](/jamf-pro/jamf-pro-installation/installation)
 - [: Jamf Pro 常見安裝問題]()
 {.links-list}
 

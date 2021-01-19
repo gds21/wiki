@@ -2,10 +2,10 @@
 title: Jamf Pro 安裝條件
 description: 
 published: true
-date: 2020-12-15T09:42:31.190Z
+date: 2021-01-19T05:56:08.878Z
 tags: 
-editor: undefined
-dateCreated: 2020-12-14T09:38:39.637Z
+editor: markdown
+dateCreated: 2021-01-19T05:56:08.878Z
 ---
 
 # Jamf Pro 安裝條件

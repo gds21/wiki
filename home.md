@@ -2,7 +2,7 @@
 title: 從這裡開始
 description: 
 published: true
-date: 2020-12-24T04:19:48.458Z
+date: 2021-01-25T05:48:52.470Z
 tags: 
 editor: markdown
 dateCreated: 2020-12-13T09:24:06.165Z
@@ -46,7 +46,7 @@ dateCreated: 2020-12-13T09:24:06.165Z
 ## Jamf Pro
 你已經了解了蘋果設備管理的兩大重點，包含零接觸部署與非零接觸部署。但無論是哪一個，你都會需要有一台 Jamf Pro 伺服器來完成部署或管理。Jamf Pro 很適合企業客戶以及有 Mac 電腦的學校使用，他能管理所有符合條件的蘋果設備。
 
-- [: Jamf Pro 完整目錄](/jamf-pro/jamf-pro-menu)
+- [: Jamf Pro 完整目錄](/zh-tw/jamf-pro/jamf-pro)
 {.links-list}
 
 <!-- ## Jamf School -->

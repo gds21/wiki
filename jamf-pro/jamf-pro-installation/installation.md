@@ -40,8 +40,12 @@ Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
 1. 客戶未來需自行負責 Jamf Pro 版本升級
 2. 客戶需要自行準備域名與憑證
 3. 客戶需要在裝機當天自行確保所有環境已經就緒。若未就緒，後續將由 Jamf Support 團隊以遠端的方式提供文件，客戶需參考文件並自行完成架設。
-4. 若是客戶需要用地端環境，請特別繪製 Jamf Pro 架構圖。
-5. Jamf Pro 地端僅適用於安裝 Windows Server、RedHat、Ubuntu 與 macOS。版本請參考：[Jamf 產品說明文件裡](https://www.jamf.com/resources/product-documentation/jamf-pro-release-notes/) 的 Jamf Pro System Requirements。
+4. 需確保 Jamf Pro 安裝包、MySQL 安裝包、Java 安裝包已下載完畢，或 JumpStart 當天能存取 Jamf Nation 下載安裝包及其它服務位置下載安裝包，並能將安裝包放置於目標伺服器主機。
+5. 若是客戶需要用地端環境，請特別繪製 Jamf Pro 架構圖。
+6. Jamf Pro 地端僅適用於安裝 Windows Server、RedHat、Ubuntu 與 macOS。版本請參考：[Jamf 產品說明文件裡](https://www.jamf.com/resources/product-documentation/jamf-pro-release-notes/) 的 Jamf Pro System Requirements。
+
+> 如果客戶使用的作業系統為 Linux，再加上網路環境非常封閉的話，在安裝 Jamf Pro 過程中，有可能會需要下載外部相依套件，請確保所有相依套件的外連點都能接上，或事先下載所有相依套件（非常多、而且龐大）
+{.is-info}
 
 ## 地端安裝架構
 JumpStart 會教客戶如何建置單台伺服器。如果客戶的環境需要建置到兩台以上的伺服器，不在 JumpStart 的教學範圍之內，客戶可以：

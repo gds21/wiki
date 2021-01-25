@@ -32,7 +32,7 @@ Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
 4. 使用 Jamf 雲端版可以少開很多公司的防火牆，降低企業風險
 5. Jamf 雲端版通過 SOC2 與 ISO27001 的資安認證
 
-[Jamf Cloud 常見問答](/jamf-pro/jamf-cloud.md)
+<!-- [Jamf Cloud 常見問答](/jamf-pro/jamf-cloud.md) -->
 
 
 ## 地端安裝環境

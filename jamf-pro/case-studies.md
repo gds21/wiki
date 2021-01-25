@@ -4,7 +4,7 @@ description:
 published: true
 date: 2020-12-15T08:11:35.980Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2020-12-15T08:11:32.415Z
 ---
 
@@ -12,5 +12,5 @@ dateCreated: 2020-12-15T08:11:32.415Z
 
 ## macOS 管理案例
 - [[ Google Chrome ] 大量部署 Extension 擴充程式](https://gleetsai.me/personal/massive-deploy-google-chrome-extension/)
-## iOS/iPadOS 管理案例
-## tvOS 管理案例
+<!-- ## iOS/iPadOS 管理案例 -->
+<!-- ## tvOS 管理案例 -->

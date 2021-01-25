@@ -4,13 +4,21 @@ description:
 published: true
 date: 2020-12-24T04:19:48.458Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2020-12-13T09:24:06.165Z
 ---
 
 # 從這裡開始
 
 歡迎使用 Apple DevOps 的知識庫。這份知識庫主要集中的知識以 Apple 相關的部署為主。你可以從這份文件開始了解有收錄的相關事項。這個知識庫包含了某些頁面並未打算公開的內容，如果你想取用這些內容的話，請於本知識庫管理員聯絡。
+
+## 本文更新項目
+
+本文所新增或修訂的內容會列於此處。
+
+<!-- |更新日期  |更新內容|
+|:--      |:--   | -->
+
 
 ## 蘋果零接觸部署
 零接觸部署非常重要，這是 Jamf Pro 的最強強項。過去每一位 MIS 人員需要預先幫使用者裝的必備軟體、帳號設定、初期配置，甚至還要針對不同部門的使用者客製電腦，全部都可以「零接觸」。
@@ -31,38 +39,36 @@ dateCreated: 2020-12-13T09:24:06.165Z
 ## 管理蘋果設備
 如果設備不滿足零接觸部署的資格，仍然可以進行管理。但是有些概念你需要先了解，尤其是管理 macOS 設備跟 iOS 設備的世界很不一樣。
 
-- [: 手動管理 Apple 設備]()
-- [: iOS/iPadOS 上有沒有監管模式的差別]()
+- [: 管理 Apple 自帶設備](/iOS-management/byod)
+- [: iOS/iPadOS 上有沒有監管模式的差別](/iOS-management/supervision)
 {.links-list}
 
 ## Jamf Pro
 你已經了解了蘋果設備管理的兩大重點，包含零接觸部署與非零接觸部署。但無論是哪一個，你都會需要有一台 Jamf Pro 伺服器來完成部署或管理。Jamf Pro 很適合企業客戶以及有 Mac 電腦的學校使用，他能管理所有符合條件的蘋果設備。
 
-- [: Jamf Pro 新消息]()
-- [: Jamf Pro 測試計畫](/jamf-pro/jamf-pro-test-plan)
-- [: Jamf Pro 完整目錄](/jamf-pro/jamf-pro)
+- [: Jamf Pro 完整目錄](/jamf-pro/jamf-pro-menu)
 {.links-list}
 
-## Jamf School
-如果對象是學校，校園裡面又以 iPad 為主的話，會比較適合走這個解決方案。
-- [: Jamf School 優勢說明]()
+<!-- ## Jamf School -->
+<!-- 如果對象是學校，校園裡面又以 iPad 為主的話，會比較適合走這個解決方案。 -->
+<!-- - [: Jamf School 優勢說明]()
 - [: Jamf School 常見使用問題]()
-{.links-list}
+{.links-list} -->
 
-## Jamf Connect
-提供 macOS 設備與雲端 IdP 完成單一登入的解決方案
-- [: Jamf Connect 優勢說明]()
+<!-- ## Jamf Connect
+提供 macOS 設備與雲端 IdP 完成單一登入的解決方案 -->
+<!-- - [: Jamf Connect 優勢說明]()
 - [: Jamf Connect 測試計畫]()
 - [: Jamf Connect 常見使用問題]()
-{.links-list}
+{.links-list} -->
 
-## Jamf Protect
-專門提供給 macOS 電腦終端防護的解決方案。
-- [: Jamf Protect 優勢說明]()
+<!-- ## Jamf Protect
+專門提供給 macOS 電腦終端防護的解決方案。 -->
+<!-- - [: Jamf Protect 優勢說明]()
 - [: Jamf Protect 大中華區共用帳號存取方式]()
-{.links-list}
+{.links-list} -->
 
-## User Choice
+<!-- ## User Choice
 Jamf 跟 Apple 推出了 User Choice 方案，只要企業在提供設備時，讓員工自己選用 Windows 電腦或 Mac 電腦，就能符合此方案。
 - [: User Choice 方案說明](/user-choice/user-choice)
-{.links-list}
+{.links-list} -->

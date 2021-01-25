@@ -10,6 +10,10 @@ dateCreated: 2021-01-19T05:56:08.878Z
 
 # Jamf Pro 安裝條件
 
+## 前置準備表單
+你可以使用此表單，確認客戶的環境準備現況：
+[Glee Evernote 客戶前置準備作業（英文版）](!https://www.evernote.com/shard/s2/client/snv?noteGuid=1adfd991-8c57-45b7-aa2a-372e2e85edf1&noteKey=2b4a76acbf953ad9&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs2%2Fsh%2F1adfd991-8c57-45b7-aa2a-372e2e85edf1%2F2b4a76acbf953ad9&title=JumpStart%2BPreCall%2BTemplate)
+
 ## 準備帳號
 1. 請準備 Apple Business Manager 帳號，並確保帳號持有人當日不會請假。
 2. 請準備一組公司的 Apple ID 做為 APNS 憑證申請使用。最好別用 ABM 的帳號、也別用 Apple Developer Program 的 Apple ID。建議申請一個 IT 群組的電子郵件，用他來申請 Apple ID。
@@ -17,6 +21,8 @@ dateCreated: 2021-01-19T05:56:08.878Z
 
 > 一個公司可以有多組的 Jamf Nation 帳號。通常是 IT 人員各自擁有。擁有 Jamf Nation 帳號才可以收到 Jamf Pro 的產品啟動序號、在 Jamf 論壇上發表文章、送出 Support Ticket 給 Jamf 客服團隊、下載 Jamf Pro 相關管理套件，以及存取 Jamf Pro 線上教學課程。
 {.is-info}
+
+4. 在進行 JumpStart 前，客戶有責任準備以下要務，請參考 [Jamf Customer Resposibility](https://www.jamf.com/services/services-policies/)
 
 ## 雲端安裝環境
 Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
@@ -26,65 +32,8 @@ Jamf Pro 有雲端版本可以使用，強烈建議使用雲端，因為：
 4. 使用 Jamf 雲端版可以少開很多公司的防火牆，降低企業風險
 5. Jamf 雲端版通過 SOC2 與 ISO27001 的資安認證
 
-### 雲端環境常見問答
-1. Jamf Cloud 的備援機制為何？
-Jamf 雲端版提供異地備援機制，資料庫會備份至其它區域，如美國東部、西部、美國政府雲、德國、倫敦、日本、澳洲。Jamf 雲端版會固定執行資料庫備份，最高保存 30 天的資料庫，每隔 24 小時進行。
+[Jamf Cloud 常見問答](/jamf-pro/jamf-cloud.md)
 
-2. Jamf Cloud 的服務水準如何？
-
-- 99.9% uptime
-- 24/7 availability
-
-3. Jamf Cloud 故障時，復原時間為何？
-
-Jamf Pro 伺服器停止服務時，並不會影響已受管理之裝置。已受管理之裝置的設定與已部署的 App 都不會脫管或消失。
-
-Jamf 承諾於最快時間內修復服務，且在服務復原後，可向 Jamf 申請 Service Credit。Jamf 不會在影響期間提供替代方案。
-
-4. Jamf Cloud 如何提供查核措施？
-
-Jamf 雲端版提供有 Change Management Log 供參考，上面將載明人員曾對公司設備做過哪些管理行為。
-
-若需匯出該日誌至貴公司 S3 空間，將需要加值版本的 Jamf Cloud。（20000 美金/年）
-
-5. Jamf Cloud 如何匯出資料？
-
-Jamf 雲端版提供 API 等方式匯出設備報表等資料，型式為 XML 與 JSON，符合資訊處理互通性。但不支援匯出資料庫轉回至地端。
-
-6. Jamf Cloud 的雲端基礎設施為何？
-
-Jamf 雲端版使用 Amazon Web Service 做為服務供應平台，為業界最大的 IaaS 服務。
-
-Jamf 與 AWS 擁有共同責任架構，確保物理性伺服器設施由 AWS 維運管理。
-
-7. Jamf Cloud 的連線安全性為何？
-
-Jamf 雲端版提供 TLS 憑證，全程使用 HTTPS 連線。該 TLS 簽證會由 Amazon 簽發，為蘋果設備預設信任的根憑證。
-
-Jamf 雲端版已完成以下資安證書取得：
-
-- SOC 2 compliance
-- ISO 27001 certification
-
-8. Jamf Cloud 會進行弱點掃描嗎？
-
-Jamf 雲端版於更新版本前，皆會進行相對應資安測試。貴公司可依主動向 Jamf 請求測試報告。
-
-9. Jamf Cloud 如何保護登入人員的安全性？
-
-Jamf 雲端版提供密碼原則功能，可設定密碼複雜度。
-
-Jamf 雲端版已滿足傳輸層安全性。
-
-若需雙因子驗證， 可整合微軟 Azure AD 達成此需求。
-
-若需取得登入記錄，需訂閱雲端加值服務，可將登入紀錄匯出至貴公司 S3 空間。（20000 美金/年）
-
-若需使用 IP 地址過濾，需訂閱雲端加值服務。（20000美金/年）
-
-以上問答請見下列資料來源：
-- https://www.jamf.com/security/
-- https://resources.jamf.com/documents/products/documentation/Jamf-Pro-Security-Overview.pdf
 
 ## 地端安裝環境
 如果客戶不使用雲端版本，Jamf Pro 亦可以安裝於地端環境，但有以下責任：
@@ -101,8 +50,12 @@ JumpStart 會教客戶如何建置單台伺服器。如果客戶的環境需要�
 
 Jamf Cluster 的技術可在客戶成為 Jamf 用戶後，在 Jamf Training Catalog 免費習得。
 
-
 ### 單台 Jamf Pro 伺服器
+Jamf JumpStart 教育訓練過程中，會教導客戶架設單台 Jamf Pro 伺服器。如有需要架設第二台（含）以上的必要，請考慮 Jamf Professional Service。
+
+單台 Jamf Pro 參考示意圖
+
+![單台 Jamf Pro 參考示意圖](/jamf_pro_single_server.jpg)
 
 ### 兩台（含）以上 Jamf Pro 伺服器
 通常會需要兩台以上 Jamf Pro 伺服器的，不外乎是以下原因，如果以下的原因不符合你目前正在施作的項目，請與 Jamf 原廠技術顧問聯絡 。如果你正在研究的施作目標同時符合下列多個，代表你每個都必須考慮疊加上去。
@@ -124,7 +77,5 @@ Jamf Cluster 的技術可在客戶成為 Jamf 用戶後，在 Jamf Training Cata
 
 #### 目的：需要管理的設備數量超過 1000 台，需要負載平衡
 
-
 ## 防火牆設定
-https://support.apple.com/zh-tw/HT210060
-https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro
+[請參考防火牆設定篇](/jamf-pro/jamf-pro-installation/firewall)
